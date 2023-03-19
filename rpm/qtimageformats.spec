@@ -1,8 +1,7 @@
-%global qt_module qtimageformats
 %global qt_version 5.15.8
 
 Summary: Qt5 - QtImageFormats component
-Name:    opt-qt5-%{qt_module}
+Name:    opt-qt5-qtimageformats
 Version: 5.15.8
 Release: 1%{?dist}
 
