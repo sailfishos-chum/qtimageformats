@@ -57,6 +57,5 @@ make install INSTALL_ROOT=%{buildroot}
 %{_opt_qt5_plugindir}/imageformats/libqtiff.so
 %{_opt_qt5_plugindir}/imageformats/libqwbmp.so
 %{_opt_qt5_plugindir}/imageformats/libqicns.so
-%{_opt_qt5_plugindir}/imageformats/libqjp2.so
 %{_opt_qt5_plugindir}/imageformats/libqwebp.so
 %{_opt_qt5_libdir}/cmake/Qt5Gui/Qt5Gui_*Plugin.cmake
