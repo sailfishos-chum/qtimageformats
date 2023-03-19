@@ -19,7 +19,6 @@ BuildRequires: opt-qt5-qtbase-private-devel
 
 BuildRequires: libmng-devel
 BuildRequires: libtiff-devel
-BuildRequires: jasper-devel
 BuildRequires: libwebp-devel >= 0.4.4
 
 # prior -devel subpkg contained only runtime cmake bits
