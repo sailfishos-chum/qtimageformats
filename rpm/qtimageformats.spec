@@ -13,7 +13,7 @@ Url:     http://www.qt.io
 Source0: %{name}-%{version}.tar.bz2
 
 BuildRequires: make
-BuildRequires: opt-qt5-qtbase-devel >= %{version}
+BuildRequires: opt-qt5-qtbase-devel >= %{qt_version}
 BuildRequires: opt-qt5-qtbase-private-devel
 %{?_qt5:Requires: %{_qt5}%{?_isa} = %{_qt5_version}}
 
