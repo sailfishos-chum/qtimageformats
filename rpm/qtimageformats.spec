@@ -11,10 +11,15 @@ Url:     http://www.qt.io
 %global majmin %(echo %{version} | cut -d. -f1-2)
 Source0: %{name}-%{version}.tar.bz2
 
+# filter plugin provides
+%global __provides_exclude_from ^%{_opt_qt5_plugindir}/.*\\.so$
+%{?opt_qt5_default_filter}
+
 BuildRequires: make
 BuildRequires: opt-qt5-qtbase-devel >= %{qt_version}
 BuildRequires: opt-qt5-qtbase-private-devel
 %{?_opt_qt5:Requires: %{_opt_qt5}%{?_isa} = %{_opt_qt5_version}}
+Requires: opt-qt5-qtbase-gui >= %{qt_version}
 
 BuildRequires: libmng-devel
 BuildRequires: libtiff-devel
@@ -22,9 +27,6 @@ BuildRequires: libwebp-devel >= 0.4.4
 
 # prior -devel subpkg contained only runtime cmake bits
 Provides:  opt-qt5-qtimageformats-devel = %{version}-%{release}
-
-# filter plugin provides
-%global __provides_exclude_from ^%{_opt_qt5_plugindir}/.*\\.so$
 
 %description
 The core Qt Gui library by default supports reading and writing image
