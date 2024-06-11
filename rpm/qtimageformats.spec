@@ -1,8 +1,8 @@
-%global qt_version 5.15.10
+%global qt_version 5.15.14
 
 Summary: Qt5 - QtImageFormats component
 Name:    opt-qt5-qtimageformats
-Version: 5.15.10+kde9
+Version: 5.15.14+kde7
 Release: 1%{?dist}
 
 # See LGPL_EXCEPTIONS.txt, LICENSE.GPL3, respectively, for details
